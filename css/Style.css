@@ -1,0 +1,23 @@
+/* ===============     reset styles      ========== */
+@import url(./reset.css);
+
+
+/* ===============      fonts     ========== */
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,600italic);
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+}
+
+[class*="__container"] {
+   max-width: 89.8%;
+   margin: 0 auto;
+}
+/* =========== CONTAINER MEDIA ===================== */
+@media (max-width: 767.98px) {
+   [class*="__container"] {
+      max-width: none;
+      padding: 0 15px;
+}
+}
