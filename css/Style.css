@@ -62,13 +62,17 @@ body {
 }
 .item-dropdown::after {
    content: '';
-   background-image: url(../img/Vector.png);
-   width: 10px;
+   background: url(../img/Vector\ 114.svg) 100%/cover no-repeat;
+   width: 15px;
+   position: absolute;
+   top: 12px;
+   right: -25px;
    height: 5px;
    color: #fff;
+   transition: all 0.3s ease 0s;
 }
 .item-dropdown:hover::after {
-   color: #F79489;
+   transform: translateY(5px, 0px);
 }
 
 .list-header__item a {
