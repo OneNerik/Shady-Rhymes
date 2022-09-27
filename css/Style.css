@@ -19,7 +19,7 @@ body {
    [class*="__container"] {
       max-width: none;
       padding: 0 15px;
-}
+   }
 }
 
 /* ===============================================
@@ -31,28 +31,14 @@ body {
    height: 100vh;
    background: url(../img/Mask\ Group.jpg) 100% 100%/ cover no-repeat;
 }
-
-.header__container {
+.header__nav {
    padding-top: 50px;
    display: flex;
    justify-content: space-between;
 }
-
-.header__logo {
-   
-}
-
-.header__nav {}
-
-.nav-header {}
-
 .nav-header__list {
    display: flex;
-
 }
-
-.list-header {}
-
 .list-header__item {
    position: relative;
    margin-right: 60px;
@@ -62,34 +48,42 @@ body {
 }
 .item-dropdown::after {
    content: '';
-   background: url(../img/Vector\ 114.svg) 100%/cover no-repeat;
-   width: 15px;
+   border: solid rgb(255, 255, 255);
+   border-width: 0 1px 1px 0;
+   display: inline-block;
+   padding: 3px   ;
    position: absolute;
    top: 12px;
-   right: -25px;
-   height: 5px;
-   color: #fff;
+   right: -15px;
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
    transition: all 0.3s ease 0s;
 }
 .item-dropdown:hover::after {
-   transform: translateY(5px, 0px);
+   border-color: #F79489;
+   top: 9px;
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
 }
-
 .list-header__item a {
    color: #fff;
    line-height: 27px;
+   transition: all 0.3s ease 0s;
 }
 .list-header__item a:hover { 
    color: #F79489;
 }
-
 .list-header__sub-list {
    display: none;
    position: absolute;
    top: 20px;
    left: 0;
 }
-
-.list-header__sub-item {}
-
-.header__cart {}
+.header__cart {
+   display: inline-block;
+   transform: scale(1);
+   transition: all 0.3s ease 0s;
+}
+.header__cart:hover { 
+   transform: scale(1.2);
+}
