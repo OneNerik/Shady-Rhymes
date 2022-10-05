@@ -14,7 +14,7 @@ body {
    max-width: 89.8%;
    margin: 0 auto;
 }
-/* =========== CONTAINER MEDIA ===================== */
+/* =========== CONTAINER MEDIA =============== */
 @media (max-width: 767.98px) {
    [class*="__container"] {
       max-width: none;
@@ -27,9 +27,74 @@ body {
 =============================================== */
 
 .header {
+   position: relative;
    width: 100%;
    height: 100vh;
-   background: url(../img/Mask\ Group.jpg) 100% 100%/ cover no-repeat;
+}
+
+/* ===============     Slider      ============= */
+
+
+.slider-header__items {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+}
+.slider-header__item {
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+
+.slick-list {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100vh;
+}
+.slick-track {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+}
+
+.slide {
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.slide.slick-slide {
+   min-height: 100vh;
+}
+
+.slick-dots {
+   position: absolute;
+   bottom: 60px;
+   left: 48.5%;
+   margin: 10px 0;
+   padding: 0;
+   text-align: center;
+}
+.slick-dots li {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background-color: #FADCD9;
+   opacity: .5;
+   transition: all .2s ease;
+   margin: 0 5px;
+   border-radius: 50%;
+}
+.slick-dots .slick-active {
+   background-color: #F79489;
 }
 
 /* ===============     NAV      ================ */
