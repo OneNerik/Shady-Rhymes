@@ -16,8 +16,17 @@ const HeaderIcon = document.querySelector('.nav-header__icon');
 if (HeaderIcon) {
    const ListHeader = document.querySelector('.list-header');
    HeaderIcon.addEventListener("click", function (e) {
+      document.body.classList.toggle('_lock');
       HeaderIcon.classList.toggle('_active');
       ListHeader.classList.toggle('_active');
    })
 }
+
+// Spoilers
+
+$(document).ready(function() {
+   $('.spoiler__title').click(function(event) {
+      $(this).toggleClass('active').next().slideToggle(300);
+   })
+})
 
