@@ -23,6 +23,8 @@ $(document).ready(function(){
       dots: true,
       autoplay: true,
       autoplaySpeed: 5000,
+      fade: true,
+      cssEase: 'linear',
       customPaging: function () { return '' }
    })
 })
