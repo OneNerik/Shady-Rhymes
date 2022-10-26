@@ -66,3 +66,33 @@ $(document).ready(function() {
       $(this).toggleClass('active').next().slideToggle(300);
    })
 })
+
+// Review Slider
+
+$(document).ready(function () {
+   $('.slider-review__items').slick({
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      customPaging: function () { return '' },
+      responsive: [
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 1,
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1
+            }
+         }
+      ]
+   })
+})
